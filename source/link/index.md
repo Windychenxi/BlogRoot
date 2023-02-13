@@ -2,6 +2,7 @@
 title: 友情链接
 date: 2023-02-08 23:04:24
 type: "link"
+top_img: https://butterfly-1316798368.cos.ap-nanjing.myqcloud.com/images/pink-324175.jpg
 ---
 
 - class_name: 友情鏈接

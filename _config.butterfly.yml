@@ -221,10 +221,10 @@ post_edit:
   url:
 
 # Related Articles
-related_post:
-  enable: true
-  limit: 6 # Number of posts displayed
-  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+#related_post:
+#  enable: true
+#  limit: 6 # Number of posts displayed
+#  date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
 photofigcaption: false
@@ -601,15 +601,21 @@ display_mode: dark
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
+  title-prefix-icon:  '\f863'
   title-prefix-icon-color: # '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
+#font:
+#  global-font-size: "16"
+#  code-font-size:
+#  font-family:
+#  code-font-family:
+
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
+  global-font-size: 16px
+  code-font-size: 16px
+  font-family: -apple-system, IBM Plex Mono ,monosapce,"微软雅黑", sans-serif
   code-font-family:
 
 # Font settings for the site title and site subtitle
@@ -802,7 +808,7 @@ rightside_item_order:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: true
+medium_zoom: false
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
@@ -857,7 +863,7 @@ aplayerInject:
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: bottom-left
+  position: top-right
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
@@ -875,9 +881,10 @@ pangu:
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  field: site # site/post
-  placeholder:
-  blur: false
+  loadingImg: /img/loading.gif
+#  field: site # site/post
+#  placeholder:
+#  blur: false
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -934,6 +941,8 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/cat.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/ethan4116-blog/lib/css/plane_v2.css">
+    - <link rel="preconnect" href="https://fonts.gstatic.com">
+    - <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
   bottom:
     - <script src="/js/sakura.js"></script>
     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
@@ -1014,6 +1023,7 @@ CDN:
     # artalk_css:
     # busuanzi:
 
+# 动画特效
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级

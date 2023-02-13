@@ -99,6 +99,17 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+# 图片懒加载
+lazyload:
+  enable: true
+  loadingImg: /img/loading.gif
+
+# Related Articles
+related_post:
+  enable: true
+  limit: 6 # Number of posts displayed
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
